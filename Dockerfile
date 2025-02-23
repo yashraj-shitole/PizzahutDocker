@@ -8,7 +8,7 @@ RUN mvn dependency:go-offline
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-FROM opjdk:17-jdk-slim
+FROM opjdk:17-jdk
 
 WORKDIR /PizzaHut
 
